@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dashboard-agents.codaxia.com/sitemap.xml
