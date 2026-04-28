@@ -1,253 +1,501 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr-CA">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard Agents | Supervise AI coding agents locally</title>
-    <meta name="description" content="Dashboard Agents is a local-first supervision dashboard for AI coding assistants. Early Access available for 500 CAD instead of the planned 1,500 CAD public price.">
+    <title>Codaxia Agent Team — Faites livrer votre agent IA comme une vraie équipe</title>
+    <meta name="description" content="Codaxia Agent Team est un tableau de bord local pour superviser Claude Code, Codex, Cursor et tout assistant IA de développement. Pipeline visible, livrable client, recap structuré. Accès anticipé à 500 $ CAD.">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Dashboard Agents | AI agent pipeline supervision">
-    <meta property="og:description" content="A local dashboard to supervise Claude Code, Codex, Cursor, and other AI coding assistants through structured agent workflows.">
+    <meta property="og:title" content="Codaxia Agent Team — Faites livrer votre agent IA comme une vraie équipe">
+    <meta property="og:description" content="Tableau de bord local pour superviser Claude Code, Codex, Cursor et autres assistants IA. Pipeline visible, livrable client, 100 % local. Accès anticipé à 500 $.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/og-dashboard-agents.svg">
+    <meta property="og:locale" content="fr_CA">
+    <meta property="og:image" content="assets/og-codaxia-agent-team.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="canonical" href="https://dashboard-agents.codaxia.com/">
+    <link rel="canonical" href="https://agents.codaxia.com/">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="preload" href="styles.css" as="style">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Dashboard Agents",
+        "name": "Codaxia Agent Team",
         "applicationCategory": "DeveloperApplication",
         "operatingSystem": "Windows, macOS, Linux",
+        "author": {
+          "@type": "Organization",
+          "name": "Codaxia",
+          "url": "https://codaxia.com"
+        },
         "offers": {
           "@type": "Offer",
           "price": "500",
           "priceCurrency": "CAD",
           "availability": "https://schema.org/LimitedAvailability",
-          "description": "Early Access commercial license with installation onboarding, follow-up support, and 6 months of updates."
+          "description": "Licence commerciale Accès anticipé incluant l'installation guidée, 4 suivis et 6 mois de mises à jour."
         }
       }
     </script>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Dashboard Agents home">
-        <span class="brand-mark">DA</span>
-        <span>Dashboard Agents</span>
+      <a class="brand" href="index.html" aria-label="Codaxia Agent Team — accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="22" height="22"><rect width="64" height="64" rx="16" fill="#0f0f0f"/><rect x="14" y="17" width="36" height="6" rx="3" fill="#ffffff" opacity="0.55"/><rect x="14" y="29" width="28" height="6" rx="3" fill="#ffffff"/><rect x="14" y="41" width="22" height="6" rx="3" fill="#ffffff" opacity="0.4"/></svg>
+        </span>
+        <span class="brand-text">Codaxia <strong>Agent Team</strong></span>
       </a>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#how-it-works">How it works</a>
-        <a href="#pricing">Early Access</a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#how">Comment ça marche</a>
+        <a href="#tour">Le produit</a>
+        <a href="#pricing">Tarif</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a class="header-cta" href="https://buy.stripe.com/REPLACE_WITH_PAYMENT_LINK">Get Early Access</a>
+      <a class="header-cta" href="https://buy.stripe.com/REPLACE_WITH_PAYMENT_LINK">Accès anticipé</a>
     </header>
 
     <main>
       <section class="hero section">
         <div class="hero-copy">
-          <p class="eyebrow">Early Access now open</p>
-          <h1>Supervise your AI coding agents like a real software team.</h1>
+          <p class="eyebrow"><span class="dot pulse"></span>Accès anticipé · Lancement québécois</p>
+          <h1>Faites livrer votre agent IA comme une vraie équipe.</h1>
           <p class="hero-lead">
-            Dashboard Agents is a local-first control panel for tracking AI coding assistants as they move through structured roles: Orchestrator, PM, Architect, Developer, Reviewer, QA, Security, and Deploy.
+            <strong>Codaxia Agent Team</strong> transforme Claude Code, Codex ou Cursor en équipe structurée — Orchestrateur, PM, Architecte, Dev, Reviewer, QA, Sécurité, Déploiement. Vous voyez ce qui avance, ce qui bloque, et ce qui est livré.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="https://buy.stripe.com/REPLACE_WITH_PAYMENT_LINK">Get Early Access for 500 CAD</a>
-            <a class="button secondary" href="#demo">See what is included</a>
+            <a class="button primary" href="https://buy.stripe.com/REPLACE_WITH_PAYMENT_LINK">Obtenir l'accès anticipé · 500 $</a>
+            <a class="button secondary" href="#book">Réserver un appel · 15 min</a>
           </div>
-          <p class="microcopy">Planned public price: 1,500 CAD. Early Access includes 1 hour of setup and onboarding, 4 follow-up calls, and 6 months of updates.</p>
+          <p class="microcopy">Prix public prévu : 1 500 $ CAD. Inclut 1 h d'installation guidée, 4 suivis de 15 min, et 6 mois de mises à jour.</p>
+          <ul class="hero-trust">
+            <li>Remboursement 14 jours</li>
+            <li>Aucune télémétrie</li>
+            <li>Code source fourni</li>
+          </ul>
         </div>
-        <div class="hero-panel" aria-label="Dashboard Agents product preview">
+        <div class="hero-panel" aria-label="Aperçu du produit Codaxia Agent Team">
           <div class="browser-bar">
             <span></span><span></span><span></span>
-            <strong>Dashboard Agents</strong>
+            <strong>Codaxia Agent Team — localhost:5173</strong>
           </div>
           <div class="dashboard-preview">
             <aside>
-              <p class="preview-label">Scenarios</p>
+              <p class="preview-label">Scénarios</p>
               <div class="preview-pill active">Feature Ops</div>
               <div class="preview-pill">Code Review</div>
               <div class="preview-pill">Full Build</div>
+              <p class="preview-label" style="margin-top: 22px;">Projets</p>
+              <div class="preview-pill subtle">Atuvu · API auth</div>
+              <div class="preview-pill subtle">Client · Module 2FA</div>
             </aside>
             <div class="preview-main">
-              <div class="pipeline">
-                <span>OR</span><span>DV</span><span>CR</span><span>QA</span>
+              <div class="pipeline" aria-hidden="true">
+                <span class="pipe-step" data-step="1">OR</span>
+                <span class="pipe-arrow">→</span>
+                <span class="pipe-step" data-step="2">DV</span>
+                <span class="pipe-arrow">→</span>
+                <span class="pipe-step" data-step="3">CR</span>
+                <span class="pipe-arrow">→</span>
+                <span class="pipe-step" data-step="4">QA</span>
               </div>
               <div class="kanban">
-                <article><strong>Backlog</strong><p>Scope first task</p></article>
-                <article><strong>In Progress</strong><p>Implement feature</p></article>
-                <article><strong>Review</strong><p>CTO validation</p></article>
+                <article><strong>Backlog</strong><p>Cadrer la portée du module</p></article>
+                <article class="active"><strong>En cours</strong><p>Implémenter TOTP + codes de secours</p></article>
+                <article><strong>En review</strong><p>Validation CTO</p></article>
               </div>
-              <div class="activity-line">QA added validation notes to the mission recap.</div>
+              <div class="activity-line"><span class="dot live"></span>QA a ajouté ses notes de validation au recap.</div>
             </div>
           </div>
         </div>
       </section>
 
+      <section class="compat" aria-label="Assistants IA compatibles">
+        <p>Compatible avec</p>
+        <ul>
+          <li>Claude Code</li>
+          <li>Codex</li>
+          <li>Cursor</li>
+          <li>tout assistant qui lit un fichier et appelle une API locale</li>
+        </ul>
+      </section>
+
       <section class="section problem">
         <div class="section-heading">
-          <p class="eyebrow">The problem</p>
-          <h2>AI coding assistants move fast. Their work is hard to follow.</h2>
+          <p class="eyebrow"><span class="dot"></span>Le problème</p>
+          <h2>L'IA code vite. Mais vous perdez la trace de ce qu'elle fait.</h2>
         </div>
         <div class="grid three">
           <article class="card">
-            <h3>No visible pipeline</h3>
-            <p>Most AI coding workflows happen inside a terminal or chat window. You lose the overview of what is scoped, built, reviewed, and validated.</p>
+            <span class="card-icon">⚠</span>
+            <h3>Aucun pipeline visible</h3>
+            <p>Tout se passe dans un terminal ou un chat. Vous n'avez pas de vue d'ensemble sur ce qui est cadré, codé, reviewé et validé.</p>
           </article>
           <article class="card">
-            <h3>Weak handoff between roles</h3>
-            <p>The assistant can act as developer, reviewer, QA, or architect, but the role changes are rarely explicit or easy to audit.</p>
+            <span class="card-icon">⤭</span>
+            <h3>Les rôles se mélangent</h3>
+            <p>L'assistant joue tour à tour le développeur, le reviewer, le QA, l'architecte. Mais sans transition explicite, c'est impossible à auditer.</p>
           </article>
           <article class="card">
-            <h3>Hard to explain progress</h3>
-            <p>For clients, teammates, or your future self, it is difficult to show what happened and why a task is ready.</p>
+            <span class="card-icon">✎</span>
+            <h3>Difficile à expliquer au client</h3>
+            <p>Pour un client, un coéquipier, ou votre vous du futur : retracer ce qui a été décidé et pourquoi prend trop de temps.</p>
           </article>
         </div>
       </section>
 
-      <section id="how-it-works" class="section split">
+      <section class="section beforeafter">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="dot"></span>Avant / Après</p>
+          <h2>De la console floue à la livraison structurée.</h2>
+        </div>
+        <div class="grid two ba-grid">
+          <article class="card before">
+            <p class="ba-tag">Sans Codaxia Agent Team</p>
+            <pre class="terminal">$ claude
+&gt; refacto le module auth
+&nbsp;&nbsp;working...
+&nbsp;&nbsp;edited 14 files
+&nbsp;&nbsp;done.
+
+&gt; ?
+&gt; tests passent ?
+&gt; security check ?
+&gt; ...</pre>
+            <ul>
+              <li>Pas de pipeline visible</li>
+              <li>Pas de trace des décisions</li>
+              <li>Aucun livrable client</li>
+            </ul>
+          </article>
+          <article class="card after">
+            <p class="ba-tag">Avec Codaxia Agent Team</p>
+            <div class="ba-board">
+              <div class="ba-row done"><span>✓</span> Architecte — découpage validé</div>
+              <div class="ba-row done"><span>✓</span> Developer — TOTP + backup codes</div>
+              <div class="ba-row active"><span>●</span> CTO Reviewer — en cours</div>
+              <div class="ba-row pending"><span>○</span> QA — en attente</div>
+              <div class="ba-row pending"><span>○</span> Security — OWASP</div>
+            </div>
+            <ul>
+              <li>Pipeline et statut de chaque rôle</li>
+              <li>Journal complet des décisions</li>
+              <li>Recap mission prêt à envoyer au client</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="how" class="section split">
         <div>
-          <p class="eyebrow">The solution</p>
-          <h2>A local dashboard for structured AI delivery.</h2>
-          <p>Dashboard Agents turns invisible AI work into a visible delivery pipeline. Your assistant reads a protocol, assumes the right roles, creates tasks, logs decisions, and updates the local dashboard as it progresses.</p>
+          <p class="eyebrow"><span class="dot"></span>Comment ça marche</p>
+          <h2>Trois étapes. Aucun nouveau workflow à apprendre.</h2>
+          <p>L'assistant lit un protocole, joue les bons rôles, crée les tâches, et met à jour le tableau de bord local pendant qu'il travaille. Vous gardez exactement votre IA et votre abonnement actuel.</p>
         </div>
         <div class="steps">
-          <div><span>1</span><p>Open the project in Claude Code, Codex, Cursor, or another compatible assistant.</p></div>
-          <div><span>2</span><p>Ask the assistant to read the agent protocol and start the mission.</p></div>
-          <div><span>3</span><p>Watch the dashboard update across agents, tasks, activity, and recap.</p></div>
+          <div><span>1</span><p><strong>Ouvrez votre projet</strong> dans Claude Code, Codex, Cursor ou un autre assistant compatible.</p></div>
+          <div><span>2</span><p><strong>Demandez-lui de démarrer la mission.</strong> Il lit le protocole et active les bons agents.</p></div>
+          <div><span>3</span><p><strong>Suivez le tableau de bord local.</strong> Agents, tâches, activité, recap — tout en temps réel.</p></div>
         </div>
       </section>
 
-      <section id="demo" class="section">
+      <section id="tour" class="section">
         <div class="section-heading">
-          <p class="eyebrow">What you get</p>
-          <h2>Everything needed to run your first supervised AI workflow.</h2>
+          <p class="eyebrow"><span class="dot"></span>Le produit</p>
+          <h2>Quatre vues, une seule mission.</h2>
+          <p>Chaque mission a son tableau de bord avec quatre onglets liés. Vous voyez l'IA travailler comme vous regarderiez une équipe humaine livrer.</p>
         </div>
-        <div class="grid four">
-          <article class="feature"><h3>Agent protocol</h3><p>Built-in role definitions for orchestration, discovery, architecture, development, review, QA, security, and deployment.</p></article>
-          <article class="feature"><h3>Visual pipeline</h3><p>Track who is active, what stage the mission is in, and what needs validation before completion.</p></article>
-          <article class="feature"><h3>Kanban tasks</h3><p>Turn the assistant's work into visible tasks with priorities, acceptance criteria, and status changes.</p></article>
-          <article class="feature"><h3>Mission recap</h3><p>Keep a final record of what changed, what was validated, and what remains to watch.</p></article>
+        <div class="tour">
+          <article class="tour-card">
+            <div class="tour-mock agents-mock">
+              <div class="mock-pipeline">
+                <div class="agent-card done"><strong>OR</strong><span>Orchestrateur</span><em>Terminé</em></div>
+                <div class="agent-card done"><strong>DV</strong><span>Developer</span><em>Terminé</em></div>
+                <div class="agent-card live"><strong>CR</strong><span>CTO Reviewer</span><em>En cours</em></div>
+                <div class="agent-card pending"><strong>QA</strong><span>Quality</span><em>En attente</em></div>
+              </div>
+            </div>
+            <h3>Agents</h3>
+            <p>Pipeline visuel. Statut de chaque rôle, dernière action effectuée, prochain agent à activer.</p>
+          </article>
+          <article class="tour-card">
+            <div class="tour-mock kanban-mock">
+              <div class="mock-col"><strong>Backlog</strong><div class="mock-task">Scope module auth</div></div>
+              <div class="mock-col"><strong>En cours</strong><div class="mock-task active">TOTP impl.</div><div class="mock-task active">Backup codes</div></div>
+              <div class="mock-col"><strong>Review</strong><div class="mock-task">Refacto guards</div></div>
+              <div class="mock-col"><strong>QA</strong><div class="mock-task">Tests E2E</div></div>
+            </div>
+            <h3>Tâches</h3>
+            <p>Kanban Backlog → En cours → Review → QA → Done. Avec critères d'acceptation, priorité et historique.</p>
+          </article>
+          <article class="tour-card">
+            <div class="tour-mock activity-mock">
+              <div class="mock-event"><span class="evt-tag dv">DV</span><p>A créé 3 fichiers dans <code>app/Auth/</code></p></div>
+              <div class="mock-event"><span class="evt-tag cr">CR</span><p>A relevé 2 commentaires bloquants</p></div>
+              <div class="mock-event"><span class="evt-tag qa">QA</span><p>A validé le scénario "Login + 2FA"</p></div>
+              <div class="mock-event live"><span class="evt-tag or">OR</span><p>Mission close — recap publié</p></div>
+            </div>
+            <h3>Activité</h3>
+            <p>Journal chronologique de toutes les actions. Filtrable par agent. Auditable, exportable.</p>
+          </article>
+          <article class="tour-card">
+            <div class="tour-mock recap-mock">
+              <p class="recap-head">Mission · Module 2FA</p>
+              <p class="recap-section"><strong>Pourquoi</strong> Sécuriser l'accès admin avant prod.</p>
+              <p class="recap-section"><strong>Comment</strong> TOTP + 8 backup codes hashés.</p>
+              <p class="recap-section"><strong>Résultat</strong> 14 fichiers, 6 tests, 0 vuln OWASP.</p>
+              <span class="recap-badge">✓ Prêt à envoyer au client</span>
+            </div>
+            <h3>Recap</h3>
+            <p>Synthèse finale : pourquoi, comment, résultat, et un guide de test pas-à-pas. À envoyer au client tel quel.</p>
+          </article>
         </div>
+      </section>
+
+      <section class="section real-shot">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="dot"></span>Aperçu réel</p>
+          <h2>Le produit, sans maquette.</h2>
+          <p>Capture du tableau de bord pendant une mission Full Build : 8 agents, 3 actifs, pipeline visible. C'est ce que vous voyez dès que votre IA commence à travailler.</p>
+        </div>
+        <figure class="device-frame">
+          <div class="device-bar">
+            <span></span><span></span><span></span>
+            <strong>Codaxia Agent Team — localhost:5173</strong>
+          </div>
+          <img src="assets/dashboard-screenshot.png" alt="Capture du tableau de bord Codaxia Agent Team affichant le pipeline d'une mission Full Build avec 8 agents, 3 actifs et 2 terminés." loading="lazy" width="1920" height="910">
+        </figure>
       </section>
 
       <section class="section contrast">
         <div class="section-heading">
-          <p class="eyebrow">Local-first by design</p>
-          <h2>No SaaS account. No telemetry. No extra API bill.</h2>
-          <p>Dashboard Agents runs locally on your machine. It works with the AI coding assistant you already use and stores live state in local files.</p>
+          <p class="eyebrow"><span class="dot light"></span>Local-first par design</p>
+          <h2>Aucun compte SaaS. Aucune télémétrie. Aucune facture API en plus.</h2>
+          <p>Codaxia Agent Team tourne sur votre machine. Il s'appuie sur l'assistant IA que vous payez déjà et stocke l'état des missions en local, dans des fichiers que vous pouvez ouvrir.</p>
         </div>
         <div class="check-list">
-          <span>No cloud dashboard required</span>
-          <span>No online activation</span>
-          <span>No license server</span>
-          <span>No telemetry</span>
-          <span>No additional AI API required</span>
-          <span>Self-hosted and inspectable</span>
+          <span>Aucun cloud requis</span>
+          <span>Aucune activation en ligne</span>
+          <span>Aucun serveur de licence</span>
+          <span>Aucune télémétrie</span>
+          <span>Aucun frais d'API additionnel</span>
+          <span>Auto-hébergé et inspectable</span>
+        </div>
+      </section>
+
+      <section class="section usecases">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="dot"></span>Cas d'usage concrets</p>
+          <h2>Pour ceux qui livrent, pas seulement ceux qui codent.</h2>
+        </div>
+        <div class="grid three">
+          <article class="card usecase">
+            <p class="uc-tag">Freelance</p>
+            <h3>Module Laravel pour un client</h3>
+            <p>Vous livrez un module 2FA. À la fin, vous envoyez un Recap mission au client : pourquoi, comment, résultat, tests. Sans rédiger un seul mot de doc.</p>
+          </article>
+          <article class="card usecase">
+            <p class="uc-tag">CTO fractionnel</p>
+            <h3>Audit d'un codebase startup</h3>
+            <p>Scénario <em>code-review</em>. Le pipeline active CTO Reviewer + Security. Le rapport sort en activité tracée et en recap signé.</p>
+          </article>
+          <article class="card usecase">
+            <p class="uc-tag">Petite agence</p>
+            <h3>Quatre missions en parallèle</h3>
+            <p>Quatre projets dans la sidebar. Quatre pipelines visibles en même temps. Vous savez en 5 secondes lequel attend une décision humaine.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section roi">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="dot"></span>Ce que vous récupérez</p>
+          <h2>Du temps. De la traçabilité. Un livrable.</h2>
+        </div>
+        <div class="grid three roi-grid">
+          <article class="roi-stat">
+            <div class="roi-num">~30 min</div>
+            <p>de doc évitées par mission. Le Recap remplace votre compte-rendu manuel.</p>
+          </article>
+          <article class="roi-stat">
+            <div class="roi-num">0 réunion</div>
+            <p>pour expliquer où ça en est. Le client regarde l'activité ou reçoit le recap.</p>
+          </article>
+          <article class="roi-stat">
+            <div class="roi-num">8 rôles</div>
+            <p>réutilisables sur chaque mission. Pas de re-briefing entre projets.</p>
+          </article>
         </div>
       </section>
 
       <section id="pricing" class="section pricing-section">
         <div class="pricing-copy">
-          <p class="eyebrow">Early Access</p>
-          <h2>Get the current version for 500 CAD before the planned 1,500 CAD public price.</h2>
-          <p>Early Access is for buyers who want to use Dashboard Agents now, help shape the product through real-world feedback, and receive updates during the first commercial phase.</p>
+          <p class="eyebrow"><span class="dot"></span>Accès anticipé</p>
+          <h2>500 $ aujourd'hui. 1 500 $ au prix public.</h2>
+          <p>L'accès anticipé s'adresse aux premiers utilisateurs qui veulent l'outil maintenant, contribuer aux retours qui façonnent la V1, et bénéficier des mises à jour pendant six mois.</p>
+          <div class="spots">
+            <div class="spots-bar"><span style="width: 32%"></span></div>
+            <p><strong>8 / 25 places</strong> attribuées · accès anticipé limité</p>
+          </div>
         </div>
         <article class="pricing-card">
-          <div class="price-topline">Dashboard Agents Early Access</div>
-          <div class="price"><span>500</span> CAD</div>
-          <p class="planned">Planned public price: 1,500 CAD</p>
+          <div class="price-topline">Codaxia Agent Team · Accès anticipé</div>
+          <div class="price"><span>500</span><em>$ CAD</em></div>
+          <p class="planned">Prix public prévu : <s>1 500 $</s></p>
           <ul>
-            <li>Commercial Early Access license</li>
-            <li>Current Dashboard Agents package</li>
-            <li>AI-assisted installation guide</li>
-            <li>1 hour of installation and onboarding</li>
-            <li>4 follow-up calls of 15 minutes</li>
-            <li>6 months of updates included</li>
-            <li>Priority feedback channel during beta</li>
+            <li>Licence commerciale Accès anticipé</li>
+            <li>Logiciel actuel — livraison locale</li>
+            <li>Guide d'installation assistée par IA</li>
+            <li>1 h d'installation et de démarrage</li>
+            <li>4 suivis de 15 minutes</li>
+            <li>6 mois de mises à jour incluses</li>
+            <li>Canal de feedback prioritaire</li>
           </ul>
-          <a class="button primary full" href="https://buy.stripe.com/REPLACE_WITH_PAYMENT_LINK">Buy with Stripe</a>
-          <p class="secure">Secure payment through Stripe. Delivery and onboarding are coordinated after purchase.</p>
+          <a class="button primary full" href="https://buy.stripe.com/REPLACE_WITH_PAYMENT_LINK">Acheter avec Stripe</a>
+          <a class="button ghost full" href="#book">Réserver un appel avant d'acheter</a>
+          <p class="secure">Paiement sécurisé Stripe · Livraison après confirmation · Remboursement 14 jours</p>
         </article>
       </section>
 
-      <section class="section beta-note">
-        <div>
-          <p class="eyebrow">Transparent beta terms</p>
-          <h2>Functional today, still evolving.</h2>
+      <section class="section guarantee">
+        <div class="guarantee-bar">
+          <div><strong>14 jours</strong><span>Remboursement intégral si l'install échoue</span></div>
+          <div><strong>0</strong><span>Télémétrie, activation en ligne, ou serveur de licence</span></div>
+          <div><strong>100 %</strong><span>Code source fourni, modifiable pour usage interne</span></div>
         </div>
-        <p>Dashboard Agents is offered as Early Access. The product is suitable for its documented local-first use cases, but some interfaces, workflows, and configuration formats may evolve. Early buyers receive a reduced price, direct onboarding, follow-up support, and 6 months of updates.</p>
       </section>
 
       <section class="section audience">
         <div class="grid two">
           <article class="card positive">
-            <h2>Good fit for</h2>
+            <h2>Pour qui c'est</h2>
             <ul>
-              <li>Solo developers using AI coding assistants</li>
-              <li>Technical consultants and fractional CTOs</li>
-              <li>Small agencies experimenting with AI delivery workflows</li>
-              <li>Teams that want a visible process around Claude Code, Codex, or Cursor</li>
+              <li>Solo développeur qui utilise déjà Claude Code, Codex ou Cursor</li>
+              <li>Consultant tech ou CTO fractionnel qui livre à des clients</li>
+              <li>Petite agence qui veut un livrable client structuré</li>
+              <li>Équipe qui veut un processus visible autour de son IA</li>
             </ul>
           </article>
           <article class="card negative">
-            <h2>Not a fit if you need</h2>
+            <h2>Pour qui ce n'est pas</h2>
             <ul>
-              <li>A hosted SaaS platform with accounts and permissions</li>
-              <li>A fully autonomous agent runtime</li>
-              <li>Enterprise SSO, admin roles, or audit logs</li>
-              <li>A cloud service that replaces your AI coding assistant</li>
+              <li>Une plateforme SaaS hébergée avec comptes et permissions</li>
+              <li>Un runtime d'agents 100 % autonomes</li>
+              <li>Une suite entreprise avec SSO, rôles admin, audit logs</li>
+              <li>Un service cloud qui remplace votre assistant IA</li>
             </ul>
           </article>
+        </div>
+      </section>
+
+      <section id="demo" class="section video">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="dot"></span>Démo complète</p>
+          <h2>Voir le produit en action.</h2>
+          <p>Une démonstration de 8 minutes : install, première mission, pipeline complet, recap final.</p>
+        </div>
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/aTk3QQ_2vK4"
+            title="Démo Codaxia Agent Team"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </section>
+
+      <section id="founder" class="section founder">
+        <div class="founder-card">
+          <div class="founder-avatar" aria-hidden="true">XL</div>
+          <div>
+            <p class="eyebrow"><span class="dot"></span>L'équipe</p>
+            <h2>Pourquoi j'ai construit ça.</h2>
+            <p>J'utilise Claude Code et d'autres assistants IA tous les jours sur mes projets de consultation. Le problème : impossible de montrer à un client ce qui a été décidé, ni de garder la trace propre d'une mission. J'ai construit Codaxia Agent Team pour mon propre usage. Aujourd'hui je le rends disponible à un petit nombre d'utilisateurs en accès anticipé.</p>
+            <p class="founder-sign">— Xavier, fondateur de Codaxia</p>
+          </div>
         </div>
       </section>
 
       <section id="faq" class="section faq">
         <div class="section-heading">
-          <p class="eyebrow">FAQ</p>
-          <h2>Common questions</h2>
+          <p class="eyebrow"><span class="dot"></span>FAQ</p>
+          <h2>Questions fréquentes</h2>
         </div>
         <div class="faq-list">
           <details open>
-            <summary>Is this a SaaS?</summary>
-            <p>No. Dashboard Agents is a local-first product. It runs on your machine and stores state locally.</p>
+            <summary>Est-ce que c'est un SaaS ?</summary>
+            <p>Non. Codaxia Agent Team est un produit local-first. Il tourne sur votre machine et stocke ses données dans des fichiers locaux. Aucun compte, aucune connexion requise après l'installation.</p>
           </details>
           <details>
-            <summary>Do I need an OpenAI or Anthropic API key?</summary>
-            <p>No API key is required for the dashboard itself. You use your existing AI coding assistant subscription, such as Claude Code, Codex, or Cursor.</p>
+            <summary>Ai-je besoin d'une clé API OpenAI ou Anthropic ?</summary>
+            <p>Non. Le tableau de bord lui-même n'appelle aucune API IA. Vous utilisez votre abonnement existant à Claude Code, Codex ou Cursor — Codaxia Agent Team ne fait que les superviser et afficher leur travail.</p>
           </details>
           <details>
-            <summary>Why is Early Access cheaper?</summary>
-            <p>The current offer is discounted because the product is in its first commercial phase. Buyers get a lower price, onboarding, and updates while the product evolves.</p>
+            <summary>Mon assistant IA n'est pas Claude Code, est-ce que ça marche ?</summary>
+            <p>Oui, tant qu'il peut lire un fichier <code>.md</code> et appeler une API HTTP locale. Tout le protocole est dans <code>AGENTS.md</code>, donc l'outil est compatible avec Claude Code, Codex, Cursor, et tout assistant équivalent.</p>
           </details>
           <details>
-            <summary>What happens after 6 months?</summary>
-            <p>Your installed copy keeps working. Updates beyond the included period may require a renewal or a new license.</p>
+            <summary>Compatible Windows / Mac / Linux ?</summary>
+            <p>Oui les trois. Node.js 18+ est le seul prérequis. L'installation guidée par IA prend en général 5 à 10 minutes et fonctionne identiquement sur les trois plateformes.</p>
           </details>
           <details>
-            <summary>Can I get a refund?</summary>
-            <p>Refunds are available within 14 days if the product cannot be installed or fundamentally fails to match the documented offer.</p>
+            <summary>Le code source est-il fourni ?</summary>
+            <p>Oui. Vous recevez le repo complet sous licence commerciale. Vous pouvez modifier le code pour votre usage interne, créer vos propres agents, adapter le protocole à votre stack.</p>
           </details>
+          <details>
+            <summary>Puis-je personnaliser les agents ?</summary>
+            <p>Oui. Les rôles d'agents sont des fichiers markdown dans <code>agents/default/</code>. Vous pouvez les modifier, en ajouter des nouveaux, ou créer des "skills" spécifiques par projet (Laravel, React, etc.).</p>
+          </details>
+          <details>
+            <summary>Pourquoi l'accès anticipé est-il moins cher ?</summary>
+            <p>Vous obtenez la version 1.0 commerciale, pleinement utilisable aujourd'hui. Le tarif réduit reflète votre statut d'<em>early adopter</em> qui contribue à façonner la roadmap, pas un produit incomplet.</p>
+          </details>
+          <details>
+            <summary>Que se passe-t-il après 6 mois ?</summary>
+            <p>Votre copie installée continue de fonctionner indéfiniment. Aucun kill switch. Les nouvelles versions au-delà de 6 mois nécessitent un renouvellement.</p>
+          </details>
+          <details>
+            <summary>Puis-je obtenir un remboursement ?</summary>
+            <p>Oui. Remboursement intégral sous 14 jours si le produit ne s'installe pas ou ne correspond pas à ce qui est documenté dans l'offre.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="book" class="section capture">
+        <div class="capture-card">
+          <p class="eyebrow"><span class="dot"></span>Pas prêt à acheter ?</p>
+          <h2>Recevez la démo et le guide d'installation.</h2>
+          <p>Un courriel, deux liens : la démo vidéo et le guide complet de mise en place. Aucun spam, aucune relance commerciale automatique.</p>
+          <form class="capture-form" action="mailto:xavier@codaxia.com" method="post" enctype="text/plain">
+            <input type="email" name="email" placeholder="votre@courriel.com" required aria-label="Adresse courriel">
+            <button type="submit" class="button primary">Recevoir la démo</button>
+          </form>
+          <p class="capture-or">ou <a href="mailto:xavier@codaxia.com?subject=Appel%20Codaxia%20Agent%20Team">réservez un appel de 15 min</a> directement avec Xavier.</p>
         </div>
       </section>
 
       <section class="section final-cta">
-        <p class="eyebrow">Limited Early Access</p>
-        <h2>Start supervising your AI delivery workflow.</h2>
-        <p>Get the current commercial version, onboarding, follow-up support, and 6 months of updates.</p>
-        <a class="button primary" href="https://buy.stripe.com/REPLACE_WITH_PAYMENT_LINK">Get Early Access for 500 CAD</a>
+        <p class="eyebrow"><span class="dot"></span>Accès anticipé limité</p>
+        <h2>Démarrez votre première mission supervisée.</h2>
+        <p>Le logiciel actuel, l'installation guidée, les suivis, et 6 mois de mises à jour.</p>
+        <a class="button primary big" href="https://buy.stripe.com/REPLACE_WITH_PAYMENT_LINK">Obtenir l'accès anticipé · 500 $</a>
+        <p class="microcopy">Prix public prévu : 1 500 $ · Remboursement 14 jours</p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© 2026 Codaxia. Dashboard Agents.</p>
-      <nav aria-label="Footer navigation">
-        <a href="terms.html">Terms</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="success.html">After purchase</a>
+      <p>© 2026 Codaxia. Codaxia Agent Team.</p>
+      <nav aria-label="Navigation pied de page">
+        <a href="terms.html">Conditions</a>
+        <a href="privacy.html">Confidentialité</a>
+        <a href="success.html">Après l'achat</a>
+        <a href="mailto:xavier@codaxia.com">Contact</a>
       </nav>
     </footer>
   </body>

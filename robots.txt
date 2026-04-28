@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /success.html
 
-Sitemap: https://dashboard-agents.codaxia.com/sitemap.xml
+Sitemap: https://agents.codaxia.com/sitemap.xml
